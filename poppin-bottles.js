@@ -28,7 +28,7 @@ function totalBottles(dollars) {
     var currentCaps = newBottles + (caps%4);
 
     // If not enough new empties and caps are produced, ends function
-    if ( currentEmpties < 2 || currentCaps < 4 ) {
+    if ( currentEmpties < 2 && currentCaps < 4 ) {
       return 0;
     }
 
